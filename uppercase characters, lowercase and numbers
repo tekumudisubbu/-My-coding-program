@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+int i,n;
+int upper=0;lower=0;
+int count=0;
+char ch[100];
+printf("enter the string:\n");
+gets(ch);
+for(i=0;ch[i]!=0;i++)
+{
+upper++;
+}
+else if(ch[i]>='a' && ch[i]<='z')
+{
+lower++;
+}
+if(ch[i]>='0' && ch[i]<='9')
+{
+count++;
+}
+}
+printf("lowercase letters: %d",lower);
+printf("\nuppercase letters: %d",upper);
+printf("\ncount of the number: %d",count);
+return 0;
+}
